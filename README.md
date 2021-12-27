@@ -50,7 +50,7 @@ In graphalgo.py we got TSP method:
  this method you need to enter list of nodes(list) in the graph and the algorithm find the path between them.
 
 
-**Explanation of the use in the function ** DIGraph.py****
+**Explanation of the use in the function DIGraph.py**
 
 In graph.py we got size v method:
 In this method return the size of the nodes in the graph.
@@ -83,7 +83,7 @@ In graph.py we got get mc() method:
 In this method we return mc in the graph (all the method that was made on some graph).
 
 
-**running times*
+# **running times**
 
 
 
