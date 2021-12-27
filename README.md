@@ -1,6 +1,6 @@
-# ex3_oop
+# ex3_oop 💻✏📝
 
- **Explanation of the assignment:***
+ **Explanation of the assignment:***3️⃣
 # In Ex3 we was need to implement two methods ,the first is of graph with nodes(location and id) and with edges(src,dest,weight).the second method that we was need to implement is of algorithms to do on our graph.(TSP,Shortestpath,load&save).
 _
 _
@@ -50,6 +50,10 @@ In graphalgo.py we got is connected method:
 
 In graphalgo.py we got TSP method:
  this method you need to enter list of nodes(list) in the graph and the algorithm find the path between them.
+ 
+ In graphalgo.py we got center method:
+In this method you need to return center of graph
+
 
 
 #**Explanation of the use in the function DIGraph.py**
