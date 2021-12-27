@@ -1,5 +1,30 @@
 # ex3_oop 💻✏📝
 
+
+
+
+https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Weighted_network.png/1280px-Weighted_network.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 => **Explanation of the assignment:***
 # In Ex3 we was need to implement two methods ,the first is of graph with nodes(location and id) and with edges(src,dest,weight).the second method that we was need to implement is of algorithms to do on our graph.(TSP,Shortestpath,load&save).
 _
