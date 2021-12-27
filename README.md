@@ -2,9 +2,11 @@
 
  **Explanation of the assignment:***
 # In Ex3 we was need to implement two methods ,the first is of graph with nodes(location and id) and with edges(src,dest,weight).the second method that we was need to implement is of algorithms to do on our graph.(TSP,Shortestpath,load&save).
+_
+_
+_
 
-
-**UML**
+# **UML**
 
 
 
@@ -32,7 +34,7 @@
 
 
 
-  **Explanation of the use in the function ** Graphalgo.py****
+ # **Explanation of the use in the function  Graphalgo.py**
 
 In graphalgo.py we got load method:
 this method you need to enter your file name to use this function.
@@ -50,7 +52,7 @@ In graphalgo.py we got TSP method:
  this method you need to enter list of nodes(list) in the graph and the algorithm find the path between them.
 
 
-**Explanation of the use in the function DIGraph.py**
+#**Explanation of the use in the function DIGraph.py**
 
 In graph.py we got size v method:
 In this method return the size of the nodes in the graph.
