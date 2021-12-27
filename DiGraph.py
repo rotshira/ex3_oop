@@ -1,8 +1,6 @@
 from GraphInterface import GraphInterface
-from Edge import Edge
-from Node import Node
-
-
+from src.Edge import Edge
+from src.Node import Node
 
 
 class DiGraph(GraphInterface):
@@ -11,12 +9,6 @@ class DiGraph(GraphInterface):
         self.edges: dict = edges
         self.vertex: dict = vertex
         self.mc = 0
-
-    def init(self, vertex: dict = {}, edges: dict = {}):
-        self.edges = {}
-        self.vertex = {}
-        self.mc = 0
-
 
     def v_size(self) -> int:
         return len(self.vertex)
