@@ -83,7 +83,8 @@ In graph.py we got get mc() method:
 In this method we return mc in the graph (all the method that was made on some graph).
 
 
-
+**time run**
+![WhatsApp Image 2021-12-27 at 21 02 47](https://user-images.githubusercontent.com/93703549/147511141-b9353477-ab7d-4f64-9f19-85ac6828a25f.jpeg)
 
 
 
