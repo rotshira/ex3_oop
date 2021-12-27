@@ -3,6 +3,34 @@
  ** **Explanation of the assignment:****
 # In Ex3 we was need to implement two methods ,the first is of graph with nodes(location and id) and with edges(src,dest,weight).the second method that we was need to implement is of algorithms to do on our graph.(TSP,Shortestpath,load&save).
 
+
+**UML**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   **Explanation of the use in the function ** Graphalgo.py****
 
 In graphalgo.py we got load method:
@@ -52,6 +80,13 @@ In this method we remove a ‘dict’ of edge by id src and id dest from the .
 
 In graph.py we got get mc() method:
 In this method we return mc in the graph (all the method that was made on some graph).
+
+
+
+
+
+
+
 
 
 
