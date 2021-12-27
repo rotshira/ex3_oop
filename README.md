@@ -3,7 +3,7 @@
 
 
 
-https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Weighted_network.png/1280px-Weighted_network.png
+
 
 
 
