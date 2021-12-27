@@ -2,8 +2,8 @@ from Node import Node
 
 class Edge:
     def __init__(self, src: int = Node, dest: int = Node, wieght : float = 0):
-        self._src = src
-        self._dest = dest
+        self.src = src
+        self.dest = dest
         self.weight = wieght
 
     def get_weight(self):
@@ -14,15 +14,15 @@ class Edge:
         self.weight = x
 
     def get_src(self):
-        return self._src
+        return self.src
 
      # setter method
-    def set_src(self, x : Node):
-        self._src= x
+    def set_src(self, x: Node):
+        self.src = x
 
     def get_dest(self):
-        return self._dest
+        return self.dest
 
      # setter method
     def set_dest(self, x : Node):
-        self._dest= x
+        self.dest = x

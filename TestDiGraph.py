@@ -3,7 +3,7 @@ import unittest
 from DiGraph import DiGraph
 
 
-class dgtest(unittest.TestCase):
+class TestDiGraph(unittest.TestCase):
 
     def test_v_size(self):
         g = DiGraph()  # creates an empty directed graph
@@ -48,7 +48,6 @@ class dgtest(unittest.TestCase):
         g.add_edge(1, 3, 10)
         d = {0: '0: |edges out|: 1  ,|edges in|: 1', 1: '1: |edges out|: 3  ,|edges in|: 1', 2: '2: |edges out|: 1  ,|edges in|: 1', 3: '3: |edges out|: 0  ,|edges in|: 2'}
         self.assertEqual(g.get_all_v(),d)
-
 
     def test_all_in_edges_of_node(self):
         g = DiGraph()  # creates an empty directed graph
@@ -95,10 +94,10 @@ class dgtest(unittest.TestCase):
         g = DiGraph()  # creates an empty directed graph
         for n in range(4):
             g.add_node(n)
-        self.assertEqual(g.get_node(0),(0,0))
-        self.assertEqual(g.get_node(1),(0,0))
-        self.assertEqual(g.get_node(2),(0,0))
-        self.assertEqual(g.get_node(3),(0,0))
+        self.assertEqual(g.get_node(0), (0, 0))
+        self.assertEqual(g.get_node(1), (0, 0))
+        self.assertEqual(g.get_node(2), (0, 0))
+        self.assertEqual(g.get_node(3), (0, 0))
 
     def test_add_edge(self):
         g = DiGraph()  # creates an empty directed graph
@@ -185,4 +184,4 @@ class dgtest(unittest.TestCase):
         self.assertEqual(g.get_edge(1,3),None)
 
 if __name__ == '__main__':
-    dgtest()
+    TestDiGraph()
