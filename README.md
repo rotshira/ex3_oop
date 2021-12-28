@@ -96,6 +96,10 @@ In graph.py we got get mc() method:
 In this method we return mc in the graph (all the method that was made on some graph).
 
 
+# **Tests**
+
+The TestDiGraph and TestGraphAlgo classes run tests on both of the classes,respectively. We tested them using JSON files which hold great amounts of nodes and edges in order to check efficiency.
+
 # **running times**
 
 
