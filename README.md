@@ -117,6 +117,17 @@ The TestDiGraph and TestGraphAlgo classes run tests on both of the classes,respe
 
 
 
+
+
+# **Computer information**
+Device name DESKTOP-2IQM7II Processor 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz 2.30 GHz Installed RAM 16.0 GB (15.7 GB usable) Device ID 89BCF75A-3AEF-4F71-BF3A-766DC75AF34C Product ID 00330-54020-20314-AAOEM System type 64-bit operating system, x64-based processor Pen and touch No pen or touch input is available for this display
+
+
+
+
+
+
+
 # Graph photographs
 
 # check1-A0.json :
