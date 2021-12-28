@@ -114,7 +114,32 @@ In this method we return mc in the graph (all the method that was made on some g
 
 
 # Graph photographs
-check2 :
+
+# check1-A0.json :
+
+
+
+
+
+
+
+
+![WhatsApp Image 2021-12-28 at 11 47 42](https://user-images.githubusercontent.com/93703549/147553425-f575442d-d317-447a-9835-66b58b1f2afd.jpeg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# check2-A5.json :
 
 
 
