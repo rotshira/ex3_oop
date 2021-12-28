@@ -1,5 +1,5 @@
 ## ex3_oop 💻
-color.Blue("Prints %s in blue.", "ex3_oop")
+
 
 
 
