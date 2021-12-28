@@ -83,7 +83,7 @@ In this method you need to return center of graph
 
 
 
-#**Explanation of the use in the function DIGraph.py**
+# **Explanation of the use in the function DIGraph.py**
 
 In graph.py we got size v method:
 In this method return the size of the nodes in the graph.
