@@ -133,8 +133,10 @@ In this method we return mc in the graph (all the method that was made on some g
 
 
 
-Graph photographs
-check2 -
+# Graph photographs
+check2 :
+
+
 
 
 
