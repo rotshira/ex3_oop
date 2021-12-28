@@ -1,32 +1,11 @@
-# ex3_oop 💻📝
-
-
-
-
-
-![WhatsApp Image 2021-12-28 at 00 54 09](https://user-images.githubusercontent.com/93703549/147512234-10a7bcfb-f375-4a08-ab77-91e5d276aa78.jpeg)
+# ex3_oop 💻
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- **Explanation of the assignment:**
+# **Explanation of the assignment:**
 # In Ex3 we was need to implement two methods ,the first is of graph with nodes(location and id) and with edges(src,dest,weight).the second method that we was need to implement is of algorithms to do on our graph.(TSP,Shortestpath,load&save).
 _
 _
