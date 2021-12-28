@@ -133,4 +133,13 @@ In this method we return mc in the graph (all the method that was made on some g
 
 
 
+Graph photographs
+check2 -
+
+
+
+
+
+![WhatsApp Image 2021-12-28 at 11 23 12](https://user-images.githubusercontent.com/93703549/147551637-13c44c2a-af0b-49a1-a231-0adc0f8677b6.jpeg)
+
 
