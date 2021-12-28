@@ -1,3 +1,5 @@
+import math
+
 import pygame
 from pygame import display, gfxdraw, RESIZABLE
 from src import DiGraph
@@ -19,7 +21,6 @@ class gui:
         screen = display.set_mode((WIDTH, HEIGHT), depth=32, flags=RESIZABLE)
         pygame.font.init()
         radius = 15
-
         while (True):
             # check events
             for event in pygame.event.get():
@@ -52,25 +53,50 @@ class gui:
     def draw_Edges(self, screen):
             for e in self.graph.edges:
                 # find the edge nodes
-                src = next(n for n in self.graph.vertex if n == e[0])
-                dest = next(n for n in self.graph.vertex if n == e[1])
+                for e in self.graph.edges:
+                    # find the edge nodes
+                    src = next(n for n in self.graph.vertex if n == e[0])
+                    dest = next(n for n in self.graph.vertex if n == e[1])
 
-                # scaled positions
-                src_x = self.my_scale(self.graph.vertex[src][0], x=True)
-                src_y = self.my_scale(self.graph.vertex[src][1], y=True)
-                dest_x = self.my_scale(self.graph.vertex[dest][0], x=True)
-                dest_y = self.my_scale(self.graph.vertex[dest][1], y=True)
+                    # scaled positions
+                    src_x = self.my_scale(self.graph.vertex[src][0], x=True)
+                    src_y = self.my_scale(self.graph.vertex[src][1], y=True)
+                    dest_x = self.my_scale(self.graph.vertex[dest][0], x=True)
+                    dest_y = self.my_scale(self.graph.vertex[dest][1], y=True)
 
-                # draw the line
-                pygame.draw.line(screen, pygame.Color(61, 72, 126), (src_x, src_y), (dest_x, dest_y))
-                # pygame.draw.polygon(screen, pygame.Color(61, 72, 126), ((0, 100), (0, 200), (200, 200), (200, 300), (300, 150), (200, 0), (200, 100)))
-            # update screen changes
-            display.update()
+                    # draw the line
+                    pygame.draw.line(screen, pygame.Color(61, 72, 126), (src_x, src_y), (dest_x, dest_y))
+                    ang = self.GetAngleOfLineBetweenTwoPoints((dest_x, dest_y), (src_x, src_y))
+                    self.DrawArrow(dest_x, dest_y, pygame.Color(0, 255, 255), ang )
+                    # update screen changes
+                display.update()
 
-            # refresh rate
-            clock.tick(60)
+                # refresh rate
+                clock.tick(60)
 
-            # a function of the algorithm of dijkstra
+    # get the angle of some arrow
+
+    def GetAngleOfLineBetweenTwoPoints(self, p1, p2):
+        xDiff = p2[0] - p1[0]
+        yDiff = p2[1] - p1[1]
+        return math.degrees(math.atan2(yDiff, xDiff))
+
+        # draw the arrow
+
+    def DrawArrow(self, x, y, color, angle=0):
+        def rotate(pos, angle):
+            cen = (5 + x, 0 + y)
+            angle *= -(math.pi / 180)
+            cos_theta = math.cos(angle)
+            sin_theta = math.sin(angle)
+            ret = ((cos_theta * (pos[0] - cen[0]) - sin_theta * (pos[1] - cen[1])) + cen[0],
+                   (sin_theta * (pos[0] - cen[0]) + cos_theta * (pos[1] - cen[1])) + cen[1])
+            return ret
+
+        p0 = rotate((0 + x, -4 + y), angle + 90)
+        p1 = rotate((0 + x, 4 + y), angle + 90)
+        p2 = rotate((10 + x, 0 + y), angle + 90)
+        pygame.draw.polygon(screen, color, [p0, p1, p2])
 
     def scaleX(self, data, min_screen, max_screen, min_data, max_data):
         """
